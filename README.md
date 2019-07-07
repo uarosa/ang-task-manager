@@ -1,2 +1,2 @@
-# ang-tasker
+# ang-task-manager
 task manager 
