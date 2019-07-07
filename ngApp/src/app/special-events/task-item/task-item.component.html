@@ -1,0 +1,20 @@
+
+<div class="row" style="border-bottom:2px solid black; padding: 10px;">
+    <div class="col-md-4">
+        <input class="btn btn-danger" 
+                type="button" 
+                value="Remove"
+                (click)="removeTask()" >
+    </div>
+    <div class="col-md-4">
+        <span>{{task.text}}</span>
+    </div>
+    <div class="col-md-4">
+       <label>
+          <input type="checkbox" 
+                [checked]="task.isDone"
+                (click)= "changeStatus()">
+           {{task.isDone ? 'Done' : 'In Progress'}}
+       </label>
+    </div>
+</div> 

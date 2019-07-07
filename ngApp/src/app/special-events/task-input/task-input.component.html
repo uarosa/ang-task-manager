@@ -1,0 +1,15 @@
+<div class="form-inline" style="margin-top:30px;">
+    <div class="form-group mx-sm-3 mb-2">
+
+    <input type="text" 
+            class="form-control" 
+            placeholder="add task..."
+            [(ngModel)]="taskText">
+    </div>
+    <input type="button" 
+            class="btn btn-primary mb-2" 
+            value="Add"
+            [disabled]="!taskText"
+            (click)="createTask()">
+   
+</div>
